@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="lo">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>error</title>
+    <link rel="stylesheet" href="./Hoo/css.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="convertForm">
+            <label for="textInput">ປ້ອນຂໍ້ຄວາມ:</label>
+            <input type="text" id="textInput" required>
+
+            <label for="baseSelect">ຖານປາຍທາງ (2, 8, 16):</label>
+            <select id="baseSelect">
+                <option value="2">ຖານ 2</option>
+                <option value="8">ຖານ 8</option>
+                <option value="16">ຖານ 16</option>
+            </select>
+            <button type="submit">ກົດເພື່ອດູຜົນ</button><br>
+        </form>
+
+        <div id="result"></div>
+        <button id="copyBtn" onclick="copyToClipboard()">ຄັດຫຼອດຂໍ້ຄວາມ</button>
+    </div>
+
+    <script src="./Hoo/js.js"></script>
+</body>
+
+</html>
