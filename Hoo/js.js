@@ -9,7 +9,6 @@ document.getElementById('convertForm').addEventListener('submit', function (even
     for (let char of text) {
         const decimalValue = char.charCodeAt(0);
 
-
         if (decimalValue < 32 || decimalValue === 127) continue;
 
         let baseValue;
@@ -20,14 +19,14 @@ document.getElementById('convertForm').addEventListener('submit', function (even
         } else if (toBase === 16) {
             baseValue = decimalValue.toString(16);
         } else {
-            alert("ບໍ່ມີຖານ");
+            alert("ບໍ່ມີຖານທີ່ກຳນົດ");
             return;
         }
         result.push(baseValue);
     }
 
+    document.getElementById('result').innerText = `${result.join(" ")}`;
 
-    document.getElementById('result').innerText = result.join(" ");
 });
 
 function copyToClipboard() {
@@ -42,4 +41,9 @@ function copyToClipboard() {
                 alert("ມີຂໍ້ຜິດພາດ: " + err);
             });
     }
+}
+
+function clearText() {
+    document.getElementById('textInput').value = '';
+    document.getElementById('result').innerText = '';
 }

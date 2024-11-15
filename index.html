@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>error</title>
+    <title>Convert Text to Base</title>
     <link rel="stylesheet" href="./Hoo/css.css">
 </head>
 
@@ -20,14 +20,15 @@
                 <option value="8">ຖານ 8</option>
                 <option value="16">ຖານ 16</option>
             </select>
-            <button type="submit">ກົດເພື່ອດູຜົນ</button>
+            <button type="submit" class="convert-btn">ກົດເພື່ອດູຜົນ</button>
+            <button type="button" class="clear-btn" onclick="clearText()">ລຶບຂໍ້ຄວາມ</button>
         </form>
         <a href="https://my16-2-8.onrender.com/">
-            <button>error</button>
+            <button class="error-btn">error</button>
         </a>
 
         <div id="result"></div>
-        <button id="copyBtn" onclick="copyToClipboard()">ຄັດຫຼອດຂໍ້ຄວາມ</button>
+        <button class="copy-btn" onclick="copyToClipboard()">ຄັດຫຼອດຂໍ້ຄວາມ</button>
     </div>
 
     <script src="./Hoo/js.js"></script>
